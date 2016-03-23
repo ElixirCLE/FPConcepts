@@ -8,6 +8,15 @@ defmodule PatternMatchingTest do
     42 = foo
     # TODO uncomment for the lolz!
     # 43 = foo
+
+    [the_head | the_tail] = [1, 2, 3]
+    assert the_head == 1
+    assert the_tail == [2, 3]
+
+    {foo, bar} = {"tuple", {"more things", "in another tuple"}}
+    assert foo = "tuple"
+    assert bar = {"more things", "in another tuple"}
+    
   end
 
   test "A more interesting example" do
@@ -24,4 +33,21 @@ defmodule PatternMatchingTest do
     assert User.greet(bob) == "Hey, Bob's back and he learned Ruby!"
 
   end
+
+
+  test "taking a look at matches in case" do
+    user = %{user_name: "Dave"}
+    foo = case user do
+      %{user_name: "Dave"} -> "It's Dave!"
+      %{user_name: _ } -> "I have no clue who it is!"
+      _ -> "Are we sure this is even a user?" # TODO - checkout removing this!
+
+    end
+
+    assert foo == "It's Dave!"
+
+  end
+
+
+
 end
