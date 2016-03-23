@@ -16,6 +16,11 @@ defmodule PatternMatchingTest do
     {foo, bar} = {"tuple", {"more things", "in another tuple"}}
     assert foo = "tuple"
     assert bar = {"more things", "in another tuple"}
+
+    santas_list = [nice: "dave", naughty: "not dave", nice: "matt", naughty: "not matt"]
+    filtered_list = for {:nice, name} <- santas_list, do: name
+
+    assert filtered_list == ["dave", "matt"]
     
   end
 
