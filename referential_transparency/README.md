@@ -1,0 +1,3 @@
+# Referential Transparency
+
+WIP
