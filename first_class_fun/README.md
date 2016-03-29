@@ -13,7 +13,7 @@ Anonymous functions are defined *inline* and not given a name. These use the key
 Functions bound to variables (and parameters) as invoked using a dot-parens syntax
 
 ```elixir
-f = fn(x) x + 1 end
+f = fn(x) -> x + 1 end
 6 = f.(5)
 ```
 
