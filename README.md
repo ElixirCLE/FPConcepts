@@ -7,7 +7,7 @@ We're trying a divide & conquer approach for this meetup with folks snagging a c
 Thanks!
 
 Some of the "Core Concepts" a quick community poll recommended were:  
-* Functions as first class citizens
+* Functions as first class citizens (may include partial function application & currying here as well?)
 * Immutability
 * Referential Transparency
 * Pattern Matching
