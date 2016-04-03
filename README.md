@@ -17,3 +17,6 @@ Some of the "Core Concepts" a quick community poll recommended were:
 * Separation of pure functional code from code with side effects  
 
 There may be more (and these probably need expansion) so please add/comment!  
+
+### FP links
+[list of concepts with brief explanations](https://github.com/hemanth/functional-programming-jargon)
